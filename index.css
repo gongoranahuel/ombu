@@ -1,0 +1,696 @@
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  object-fit: contain;
+  list-style-type: none;
+
+}
+@media (){
+  * {
+    margin: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    
+ 
+  }
+}
+
+@font-face {
+  font-family: "South\ Australia.ttf";
+  src: url(./South\ Australia.ttf);
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+   align-items: center;
+  font-size: 14px;
+  text-decoration: none;
+  top: 0;
+  background: linear-gradient(
+    108deg,
+    rgba(255, 255, 255, 1) 17%,
+    rgba(194, 187, 215, 1) 28%,
+    rgba(144, 132, 183, 1) 59%,
+    rgba(184, 180, 198, 1) 91%,
+    rgba(201, 187, 246, 1) 100%
+  );
+  position: sticky;
+ 
+  z-index: 2;
+  width: 100%;
+}
+@media (min-width: 850px) {
+  .header {
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+    text-decoration: none;
+    background: linear-gradient(
+      108deg,
+      rgba(255, 255, 255, 1) 17%,
+      rgba(194, 187, 215, 1) 28%,
+      rgba(144, 132, 183, 1) 59%,
+      rgba(184, 180, 198, 1) 91%,
+      rgba(201, 187, 246, 1) 100%
+    );
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+  } 
+}
+.list-nav {
+  text-shadow: 5px 5px 10px rgb(78, 6, 119);
+    text-decoration: none;
+  list-style: none;
+  padding-left: 0%;
+  
+}
+@media (min-width: 850px){
+  .list-nav{
+  text-shadow: 5px 5px 10px rgb(78 6 119);
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  padding-left: 0%;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  
+  padding: 0%;
+  margin-bottom: 10px;
+  font-size: 10px;
+}
+
+@media (min-width: 850px){
+  .nav-bar
+  {
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+        margin-bottom: 10px;
+    font-size: 20px;
+}
+}}
+
+.logo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  height: 5em;
+}
+@media (min-width: 850px){
+  .logo { margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    height: 7em;
+  }
+}
+
+.hover {
+  font-family: "Cinzel", serif;
+  text-decoration: none;
+}
+.portada {
+  object-fit: fill;
+  max-width: 100%;
+  width: 100%;
+  
+  background-image: url(./img/ombufotos/escuela-futbol.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 850px){
+  .portada {
+    object-fit: contain;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    background-image: url(./img/ombufotos/escuela-futbol.jpg);
+    height: 700px;
+    justify-content: space-around;}
+}
+.portada2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 1;
+}
+@media (min-width: 850px){
+  .portada2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 1;
+  }
+}
+.portada:before {
+  margin-top: 125px;
+  content: "";
+  min-height: 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(184, 180, 198);
+  background: linear-gradient(
+    108deg,
+    rgba(184, 180, 198, 1) 18%,
+    rgb(240, 238, 248) 100%
+  );
+  opacity: 0.5;
+  background-attachment: fixed;
+  z-index: 0;
+  justify-content: center;
+}
+@media (min-width: 850px){
+  .portada:before {
+    margin-top: 170px;
+    content: "";
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(184, 180, 198);
+    background: linear-gradient(
+      108deg,
+      rgba(184, 180, 198, 1) 18%,
+      rgb(240, 238, 248) 100%
+    );
+    opacity: 0.5;
+    background-attachment: fixed;
+    z-index: 0;
+  }
+}
+.leyenda {
+  text-align: center;
+  font-size: 30px;
+  font-family: "South\ Australia.ttf";
+  color: rgb(245, 233, 247);
+  text-shadow: 5px 5px 10px rgba(20, 7, 95, 0.726);
+  transform: scale(: 3px);
+  text-decoration: 3px rgb(2, 2, 2);
+}
+@media (min-width: 850px) {
+  .leyenda{
+  FONT-WEIGHT: 600;
+    text-align: center;
+    font-size: 150px;
+    color: rgb(0 0 0 / 63%);
+    text-shadow: 5px 5px 10px rgb(0 0 0 / 73%);
+    transform: scale(: 3px);
+    text-decoration: 3px rgb(2, 2, 2);
+    width: 60%;
+    font-family: "South\ Australia.ttf";
+  }
+}
+.boton-equipo {
+  color: #fff;
+  font-weight: 50px;
+  font-size: 20px;
+  border-radius: 10px;
+  font-family: "Cinzel", serif;
+  background-color: rgba(255, 246, 246, 0.26);
+  border-color: rgba(0, 0, 0, 0.486);
+}
+@media (min-width: 850px){
+  .boton-equipo {
+    color: #fff;
+       font-size: 40px;
+    border-radius: 10px;
+    font-family: 'Anton', sans-serif;
+    background-color: rgba(255, 246, 246, 0.26);
+    border-color: rgba(0, 0, 0, 0.486);
+  }
+}
+.boton-equipo:hover {
+  background-color: rgba(2, 29, 78, 0.719);
+}
+.linea {
+  background-color: #526ea3;
+  width: 100%;
+  height: 5px;
+  display: block;
+}
+.section-acade {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  text-align: justify;
+  background: url(./img/wilsonlogo.jpg);
+  height: 100%;
+  color: #fff;
+  align-items: center;
+  font-family: "Cinzel", serif;
+  font-size: 12px;
+}
+@media (min-width: 850px){
+  .section-acade {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    text-align: justify;
+    background: url(./img/wilsonlogo.jpg);
+    height: 100%
+    color: #fff;
+    font-family: "Cinzel", serif;
+    font-size: 16px;
+  }
+}
+.imagen-staff{
+   width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.texto-p {
+  width: 60%;
+  height: 100%;
+  padding: 40px 30px;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (min-width: 850px)
+{.texto-p {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  padding: 40px 30px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+}
+.galeria {
+  display: grid;
+  margin: auto;
+  grid-gap: 10px;
+  padding: 40px;
+  padding-top: 10px;
+  overflow: hidden;
+  align-items: center;
+}
+
+.gale-h2 {
+  font-family: "Cinzel", serif;
+  text-align: center;
+ }
+
+@media (min-width: 850px){
+  .gale-h2 {
+    margin-top: 20px;
+    font-family: "Cinzel", serif;
+    text-align: center;
+    font-size: 60px;
+   text-shadow: #00b4cf;
+   background-image: url(./img/wilsonlogo.jpg);
+  color: #fff;
+  }
+}
+
+.galeria > a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+.galeria img {
+  width: 100%;
+  vertical-align: top;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0, 5s;
+}
+.galeria a:hover img {
+  filter: blur(2px);
+  transform: rotate(8deg);
+  scale: (1.3);
+}
+.boxs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out;
+}
+.boxs img {
+  width: 75vw;
+  max-height: 70vh;
+}
+.boxs:target {
+  transform: scale(1);
+}
+.close {
+  display: block;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background: rgba(196, 5, 5, 0.5);
+  color: white;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50px;
+}
+.flecha {
+  display: block;
+  background: rgba(196, 5, 5, 0.5);
+  color: white;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+.form-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-container {
+  flex: 1;
+  height: 100px;
+  background-color: $teal;
+}
+.right-container {
+  display: flex;
+  flex: 1;
+  height: 460px;
+  background-color: $white;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-container {
+  display: flex;
+  flex: 1;
+  height: 580px;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+}
+
+.left-container p {
+  font-size: 0.9rem;
+}
+
+.right-inner-container {
+  width: 70%;
+  height: 80%;
+  text-align: center;
+}
+
+.left-inner-container {
+  height: 50%;
+  width: 80%;
+  text-align: center;
+  line-height: 22px;
+}
+
+input,
+textarea {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: 1px solid $teal;
+}
+
+.bot-con {
+  border-radius: 20px;
+  border: 1px solid #00b4cf;
+  background-color: #00b4cf;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  cursor: pointer;
+}
+
+.bot-con:hover {
+  opacity: 0.7;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  background-color: #3586ff;
+  min-height: 100px;
+  flex-direction: row;
+  background-color: #000000;
+  border-top: 2px solid #889bb1;
+  border-right: 2px solid #889bb1;
+  border-bottom: 2px solid #889bb1;
+  border-left: 2px solid #889bb1;
+  font-family: "Cinzel", serif;
+  flex-direction: column;
+}
+.contacto2 {
+  display: flex;
+  background-color: #000000;
+}
+.social {
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  width: 100%;
+  font-size: 2em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  background-color: #000000;
+  text-align: center;
+}
+.social:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+.team2 {
+  color: #fff;
+  justify-content: center;
+  font-size: 14px;
+}
+.ul-fo {
+  display: flex;
+}
+
+.logo2{
+  height: 100%;
+}
+@media (min-width: 320px){
+  .logo2{
+      width: 200px;
+      height: 10em;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border-radius: 20px;
+  }
+  .seccion-reg{
+      display: flex;
+      margin-top: 0%;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      justify-content: space-around;
+      background-image: url(./img/polvodeladrillos.jpg);
+      
+  flex-direction: column;
+  align-items: center;
+  }
+  
+.contenedor{
+ 
+  display: flex;
+  width: 100%;
+  padding: 15px;
+  flex-direction: column;
+  align-items: center;
+}
+.contenedor-loguin {
+  display: flex;
+  width: 100%;
+  padding: 15px;
+  flex-direction: column;}
+.formu{
+  display: flex;
+  justify-content: space-around;
+  background-image: url(./img/polvodeladrillos.jpg);
+  flex-direction: column;
+  align-items: center;
+}
+.formulario{
+  background: #ffffff4a;
+  padding: 3px;
+  margin: auto;
+  width: 500px;
+  margin-top: 150px;
+  border-radius: 2%;
+  background: #ffffff87;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 320px){
+  .formulario{
+      width: 100%;
+             background: #ffffff4a;
+      padding: 5px;
+      margin: 0%;
+      background: #ffffff87;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+  }
+}.formulario2{
+  background: #ffffff4a;
+  padding: 3px;
+  margin: auto;
+  width: 500px;
+  margin-top: 150px;
+  border-radius: 2%;
+  background: #ffffff87;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 320px){
+  .formulario2{
+   
+      font-size: 14px;
+      background: #ffffff4a;
+      padding-right: 5%;
+      margin: 0;
+      background: #ffffff87;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-left: 5%;
+  }
+}
+
+
+h1 {
+  color: #0d1728;
+  text-align: center;
+  font-size: 40px;
+  text-shadow: 1px 1px #0d1728;
+}
+
+input [type="text"], 
+input [type="password"]{
+  font-size: 20px;
+  width: 82%;
+  padding: 10px;
+  border: none;
+}
+.input-contenedor {
+  margin-bottom: 10px;
+  border: 1px solid #aaa;
+}
+.icon{
+  min-width: 50px;
+  text-align: center;
+  color: #1A2537;
+}
+.button{
+  width: 100%;
+  border: none;
+  color: white;
+  font-size: 20px;
+  background-color: #1a2537;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+}
+.button2{
+  width: 100%;
+  border: none;
+  color: white;
+  font-size: 20px;
+  background-color: #1a2537;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+}
+.button:hover{
+  background: cadetblue;
+}
+p{
+  text-align: center;
+}
+.link {
+  text-decoration: none;
+  color:  #1a2537;
+  font-weight: 600;
+  font-size: 30px;
+}
+.link:hover{
+  color: cadetblue;
+}
+@media(min-width:768px)
+{
+  .formulario{
+          margin: auto;
+          width: 500px;
+          margin-top: 150px;
+          border-radius: 2%;
+          background: #ffffff87;
+  }
+}
+
+.gradient-custom-2 {
+  background: #fccb90;
+  background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);   
+  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  }
+  
+  @media (min-width: 768px) {
+  .gradient-form {
+  height: 100vh !important;
+  }
+  }
+  @media (min-width: 769px) 
+  {
+  .gradient-custom-2 {
+  border-top-right-radius: .3rem;
+  border-bottom-right-radius: .3rem;
+  }
